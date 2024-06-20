@@ -31,7 +31,7 @@
 
 ## Git status
 
-- [ ] git status
+- [ ] git **status**
 
   * untracked --> **Untracked files**
   * staged    --> **Changes to be committed** (git add - "staging area / indexed / cached")
@@ -70,7 +70,21 @@ graph LR;
 
 - git diff --staged (if add or commit)
 - git diff (if file modifited)
-- git diff HASH HEAD-HASH or HEAD (after commit)
+- git diff *HASH* *HEAD-HASH* or *HEAD* (after commit)
+- git diff *HASHBRANCH* *HASHBRANCH*
+
+- git diff **%NAMEBRANCH%** **%NAMEBRANCH%**
+- symbol **~** ---> *git diff main~3 main* --> main~3 "the third commit from the last one (HEAD)" --> main === main~0
+- **main~ === main~1**
+
+## Git branch
+
+- git **branch** --> show all branches
+- git branch %NAMEBRANCH% --> create new branch
+  - example - (*features/add-branch-info*)
+  - symbols **/ . _ -**
+- git **checkout** %NAMEBRANCH% --> switch branch
+- git checkout **-b** %NAMEBRANCH% --> branch + checkout
 
 ## .gitignore 
 
