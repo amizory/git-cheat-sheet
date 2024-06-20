@@ -28,7 +28,7 @@
 - [x] git remote add origin git@github.com:%name%:URL-project.git
 - [x] git remote -v 
 - [x] git push -u origin (master/main)
-- [x] git push -u origin **%NAMEBRANCH**
+- [x] git push -u origin **%NAMEBRANCH%**
 
 ## Git status
 
