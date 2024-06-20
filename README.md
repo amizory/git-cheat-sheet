@@ -72,6 +72,10 @@ graph LR;
 - git diff (if file modifited)
 - git diff HASH HEAD-HASH or HEAD (after commit)
 
+## Git merge
+
+- git merge **%NAMEBRANCH** -- **you can't be in this branch**
+
 ## .gitignore 
 
 | Syntax | Description |
