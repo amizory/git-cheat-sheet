@@ -83,6 +83,8 @@ graph LR;
 - git branch %NAMEBRANCH% --> create new branch
   - example - (*features/add-branch-info*)
   - symbols **/ . _ -**
+- git branch **-D** %NAMEBRANCH% --> delete force branch
+- git branch **-d** %NAMEBRANCH% --> delete soft branch
 - git **checkout** %NAMEBRANCH% --> switch branch
 - git checkout **-b** %NAMEBRANCH% --> branch + checkout
 
