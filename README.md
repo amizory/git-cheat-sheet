@@ -13,7 +13,8 @@
 3. git **commit** (-m "comment")
 4. git **log** (--oneline)
 5. git **push** (-u)
-6. git **clone** (URL - HTTPS - SSH - GitHub Cli)
+6. git **pull**
+7. git **clone** (URL - HTTPS - SSH - GitHub Cli)
 
 ## ~~SSH~~
 
@@ -80,7 +81,7 @@ graph LR;
 
 ## Git branch
 
-- git **branch** --> show all branches
+- git **branch** or **branch** -a --> show all branches
 - git branch %NAMEBRANCH% --> create new branch
   - example - (*features/add-branch-info*)
   - symbols **/ . _ -**
@@ -92,6 +93,8 @@ graph LR;
 ## Git merge
 
 - git merge **%NAMEBRANCH** -- **you can't be in this branch**
+- git merge (--abord) --> cancel fusion
+- git merge (--no-ff) --> off fast-forward
 
 ## .gitignore 
 
