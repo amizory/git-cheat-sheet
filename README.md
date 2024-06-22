@@ -96,6 +96,12 @@ graph LR;
 - git merge (--abord) --> cancel fusion
 - git merge (--no-ff) --> off fast-forward
 
+## Git push 
+```
+#Вon't use a forced push, it throws out a conflicting commit (previous one)
+git push (--force)
+```
+
 ## .gitignore 
 
 | Syntax | Description |
