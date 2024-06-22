@@ -98,7 +98,7 @@ graph LR;
 
 ## Git push 
 ```
-#Вon't use a forced push, it throws out a conflicting commit (previous one)
+#Don't use a forced push, it throws out a conflicting commit (previous one)
 git push (--force)
 ```
 
