@@ -94,8 +94,10 @@ graph LR;
 ```
 #You can't be in this branch
 git merge <NAMEBRANCH>
+
 #Cancel fusion
 git merge (--abord)
+
 #Off fast-forward
 git merge (--no-ff) 
 ```
