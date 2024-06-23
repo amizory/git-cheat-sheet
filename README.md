@@ -91,10 +91,14 @@ graph LR;
 - git checkout **-b** %NAMEBRANCH% --> branch + checkout
 
 ## Git merge
-
-- git merge **%NAMEBRANCH** -- **you can't be in this branch**
-- git merge (--abord) --> cancel fusion
-- git merge (--no-ff) --> off fast-forward
+```
+#You can't be in this branch
+git merge <NAMEBRANCH>
+#Cancel fusion
+git merge (--abord)
+#Off fast-forward
+git merge (--no-ff) 
+```
 
 ## Git push 
 ```
