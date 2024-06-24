@@ -80,15 +80,27 @@ graph LR;
 - **main~ === main~1**
 
 ## Git branch
+```
+#Show all branches
+git branch or branch (-a)
 
-- git **branch** or **branch** -a --> show all branches
-- git branch %NAMEBRANCH% --> create new branch
+#Create new branch
+git branch <NAMEBRANCH>
   - example - (*features/add-branch-info*)
   - symbols **/ . _ -**
-- git branch **-D** %NAMEBRANCH% --> delete force branch
-- git branch **-d** %NAMEBRANCH% --> delete soft branch
-- git **checkout** %NAMEBRANCH% --> switch branch
-- git checkout **-b** %NAMEBRANCH% --> branch + checkout
+
+#Delete force branch
+git branch (-D) <NAMEBRANCH>
+
+#Delete soft branch
+git branch (-d) <NAMEBRANCH>
+
+#Switch branch
+git checkout <NAMEBRANCH>
+
+#Branch + checkout
+git checkout (-b) <NAMEBRANCH> 
+```
 
 ## Git merge
 ```
@@ -147,6 +159,4 @@ git push (--force)
 Markdown
 : ~~Markdown~~ is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
 
----
----
 ---
