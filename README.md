@@ -61,10 +61,12 @@ graph LR;
 ```
 
 ## Git commit 
-
-- (--amend) --> rework last commit (HEAD)
-- (-m) --> message for commit
-- (--no-edit) --> save last message
+```
+git commit
+  (--amend)     --> rework last commit (HEAD) (add or misstake)
+  (-m)          --> message for commit
+  (--no-edit)   --> save last message
+```
 
 #### Example 
 1. git add file.pdf
@@ -115,7 +117,10 @@ git merge <NAMEBRANCH>
 git merge (--abord)
 
 #Off fast-forward
-git merge (--no-ff) 
+git merge (--no-ff)
+
+#Mergetool
+git mergetool
 ```
 
 ## Git push 
