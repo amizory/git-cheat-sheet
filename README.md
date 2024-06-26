@@ -35,12 +35,12 @@
 ```
 git status
   
-  #Untracked --> Untracked files
-  #Staged    --> Changes to be committed (git add - "staging area / indexed / cached")
-  #Tracked   --> After git add or git commit
-  #Modified  --> Changes not stages for commit(new version file)
+  #Untracked      --> Untracked files
+  #Staged         --> Changes to be committed (git add - "staging area / indexed / cached")
+  #Tracked        --> After git add or git commit
+  #Modified       --> Changes not stages for commit(new version file)
   #Unmerged paths --> Conflict
-  
+
 #Ignored files
 git status (--ignored)
 ```
