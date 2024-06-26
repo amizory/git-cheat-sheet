@@ -32,14 +32,18 @@
 - [x] git push -u origin **%NAMEBRANCH%**
 
 ## Git status
-
-- [ ] git **status**
-
-  * untracked --> **Untracked files**
-  * staged    --> **Changes to be committed** (git add - "staging area / indexed / cached")
-  * tracked   --> after git add or git commit
-  * modified  --> **Changes not stages for commit** (new version file)
-  - [x] git status (--ignored) --> **Ignored files**
+```
+git status
+  
+  #Untracked --> Untracked files
+  #Staged    --> Changes to be committed (git add - "staging area / indexed / cached")
+  #Tracked   --> After git add or git commit
+  #Modified  --> Changes not stages for commit(new version file)
+  #Unmerged paths --> Conflict
+  
+#Ignored files
+git status (--ignored)
+```
 
 ## Recovery 
 
