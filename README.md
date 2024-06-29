@@ -4,17 +4,19 @@
 
 - use *"cd .git/"*
 - cat *HEAD*
-- cat *refs/heads/aster* ("last hash")
+- cat *refs/heads/aster*  --> last hash
 
 ## **Base command**
 
 1. git **init**
-2. git **add** (-all)
+2. git **add** (--all, --interactive, --patch)
 3. git **commit** (-m "comment")
-4. git **log** (--oneline)
-5. git **push** (-u)
-6. git **pull**
-7. git **clone** (URL - HTTPS - SSH - GitHub Cli)
+4. git **log** (--oneline, -p)
+5. git **shortlog**
+6. git **push** (-u)
+7. git **pull**
+8. git **clone** (URL - HTTPS - SSH - GitHub Cli)
+9. git **blame** <FILE> --> annotation FILE
 
 ## ~~SSH~~
 
@@ -46,11 +48,19 @@ git status (--ignored)
 ```
 
 ## Recovery 
+```
+#If file on staged or modified 
+git restore --staged <FILE>
 
-1. If file on staged or modified --> git restore --staged **file**
-2. If file was modifed --> git restore **file**
-3. After git commit --> git commit reset --hard **HASH**
+#If file was modifed 
+git restore <FILE>
 
+#After git commit
+git reset --hard <HASH>
+
+#Index file
+git rm --cached <FILE>
+```
 ## Use mermaid
 
 ```mermaid
