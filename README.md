@@ -1,6 +1,6 @@
 # Start Git learning
 
-## Hash 
+## Hash
 
 - use *"cd .git/"*
 - cat *HEAD*
@@ -8,47 +8,54 @@
 
 ## **Base command**
 
-1. git **init**
-2. git **add** (--all, --interactive, --patch)
-3. git **commit** (-m "comment")
-4. git **log** (--oneline, -p)
-5. git **shortlog**
-6. git **push** (-u)
-7. git **pull**
-8. git **clone** (URL - HTTPS - SSH - GitHub Cli)
-9. git **blame** <FILE> --> annotation FILE
+```sh
+git [command]
+              init
+              add (--all, --interactive, --patch)
+              commit (-m "comment")
+              log (--oneline, -p)
+              shortlog
+              push (-u)
+              pull
+              clone (URL - HTTPS - SSH - GitHub Cli)
+              blame <FILE>  --> annotation FILE
+```
 
-## ~~SSH~~
+## SSH
 
-- ls -la ./ssh 
+- ls -la ./ssh
 - ssh-keygen -t ed25519 -C "email"
 - cat ~/.ssh/id_ed25519.pub
 - setting GitHub
 - ssh -T git@github.com
 
-## Remote settings 
+## Remote settings
 
-- [x] git remote add origin git@github.com:%name%:URL-project.git
-- [x] git remote -v 
-- [x] git push -u origin (master/main)
-- [x] git push -u origin **%NAMEBRANCH%**
+```sh
+1 ---> git remote add origin git@github.com:%name%:URL-project.git
+2 ---> git remote -v
+3 ---> git push -u origin (master/main)
+4 ---> git push -u origin <NAMEBRANCH>
+```
 
 ## Git status
-```
+
+```sh
 git status
   
-  #Untracked      --> Untracked files
-  #Staged         --> Changes to be committed (git add - "staging area / indexed / cached")
-  #Tracked        --> After git add or git commit
-  #Modified       --> Changes not stages for commit(new version file)
-  #Unmerged paths --> Conflict
+  Untracked      --> Untracked files
+  Staged         --> Changes to be committed (git add - "staging area / indexed / cached")
+  Tracked        --> After git add or git commit
+  Modified       --> Changes not stages for commit(new version file)
+  Unmerged paths --> Conflict
 
-#Ignored files
+Ignored files
 git status (--ignored)
 ```
 
-## Recovery 
-```
+## Recovery
+
+```sh
 #If file on staged or modified 
 git restore --staged <FILE>
 
@@ -61,6 +68,7 @@ git reset --hard <HASH>
 #Index file
 git rm --cached <FILE>
 ```
+
 ## Use mermaid
 
 ```mermaid
@@ -70,15 +78,17 @@ graph LR;
   tracked/comitted -- "changes" --> modified;
 ```
 
-## Git commit 
-```
+## Git commit
+
+```sh
 git commit
   (--amend)     --> rework last commit (HEAD) (add or misstake)
   (-m)          --> message for commit
   (--no-edit)   --> save last message
 ```
 
-#### Example 
+### Example
+
 1. git add file.pdf
 2. git commit -m "add docs"
 3. git add README.md
@@ -96,7 +106,8 @@ git commit
 - **main~ === main~1**
 
 ## Git branch
-```
+
+```sh
 #Show all branches
 git branch or branch (-a)
 
@@ -119,7 +130,8 @@ git checkout (-b) <NAMEBRANCH>
 ```
 
 ## Git merge
-```
+
+```sh
 #You can't be in this branch
 git merge <NAMEBRANCH>
 
@@ -133,13 +145,14 @@ git merge (--no-ff)
 git mergetool
 ```
 
-## Git push 
-```
+## Git push
+
+```sh
 #Don't use a forced push, it throws out a conflicting commit (previous one)
 git push (--force)
 ```
 
-## .gitignore 
+## .gitignore
 
 | Syntax | Description |
 | ----------- | ----------- |
@@ -158,7 +171,7 @@ git push (--force)
 
 ## Code view
 
-```
+```sh
 {
   "firstName": "Dmitry",
   "lastName": "Sakhno",
@@ -179,3 +192,5 @@ Markdown
 : ~~Markdown~~ is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
 
 ---
+
+- [x]
