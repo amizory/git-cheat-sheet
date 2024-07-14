@@ -13,12 +13,21 @@ git [command]
               init
               add (--all, --interactive, --patch)
               commit (-m "comment")
-              log (--oneline, -p)
-              shortlog
+              log (--oneline, -p)   ---> detailed information about commits
+              shortlog              ---> all commits autor
               push (-u)
               pull
               clone (URL - HTTPS - SSH - GitHub Cli)
-              blame <FILE>  --> annotation FILE
+              blame <FILE>          ---> annotation FILE
+```
+
+## **Deletion, modification, manipulation**
+
+```sh
+git [command]
+              gc     ---> garbage collector, parent command
+              reflog ---> all commint in branch
+              fsck   ---> checking the repository for errors
 ```
 
 ## SSH
@@ -113,8 +122,8 @@ git branch or branch (-a)
 
 #Create new branch
 git branch <NAMEBRANCH>
-  - example - (*features/add-branch-info*)
-  - symbols **/ . _ -**
+  ---> example - (*features/add-branch-info*)
+  ---> symbols **/ . _ -**
 
 #Delete force branch
 git branch (-D) <NAMEBRANCH>
