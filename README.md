@@ -26,7 +26,7 @@ git [command]
 ```sh
 git [command]
               gc     ---> garbage collector, parent command
-              reflog ---> all commint in branch
+              reflog ---> all commit in branch
               fsck   ---> checking the repository for errors
 ```
 
@@ -37,6 +37,9 @@ git [command]
 - cat ~/.ssh/id_ed25519.pub
 - setting GitHub
 - ssh -T git@github.com
+
+- git config --global user.name 'NAME'
+- git config --global user.email 'EMAIL'
 
 ## Remote settings
 
