@@ -14,7 +14,7 @@ git [command]
               add (--all, --interactive, --patch)
               commit (-m "comment")
               log (--oneline, -p)   ---> detailed information about commits
-              shortlog              ---> all commits autor
+              shortlog              ---> all commits author
               push (-u)
               pull
               clone (URL - HTTPS - SSH - GitHub Cli)
@@ -36,7 +36,7 @@ git [command]
 - ssh-keygen -t ed25519 -C "email"
 - cat ~/.ssh/id_ed25519.pub
 - setting GitHub
-- ssh -T git@github.com
+- ssh -T <git@github.com>
 
 - git config --global user.name 'NAME'
 - git config --global user.email 'EMAIL'
@@ -71,7 +71,7 @@ git status (--ignored)
 #If file on staged or modified 
 git restore --staged <FILE>
 
-#If file was modifed 
+#If file was modified 
 git restore <FILE>
 
 #After git commit
@@ -86,15 +86,15 @@ git rm --cached <FILE>
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "git commit" --> tracked/comitted;
-  tracked/comitted -- "changes" --> modified;
+  staged    -- "git commit" --> tracked/committed;
+  tracked/committed -- "changes" --> modified;
 ```
 
 ## Git commit
 
 ```sh
 git commit
-  (--amend)     --> rework last commit (HEAD) (add or misstake)
+  (--amend)     --> rework last commit (HEAD) (add or mistake)
   (-m)          --> message for commit
   (--no-edit)   --> save last message
 ```
@@ -109,7 +109,7 @@ git commit
 ## Git diff
 
 - git diff --staged (if add or commit)
-- git diff (if file modifited)
+- git diff (if file modified)
 - git diff *HASH* *HEAD-HASH* or *HEAD* (after commit)
 - git diff *HASHBRANCH* *HASHBRANCH*
 
