@@ -40,6 +40,7 @@ git [command]
 
 - git config --global user.name 'NAME'
 - git config --global user.email 'EMAIL'
+- git config --list
 
 ## Remote settings
 
